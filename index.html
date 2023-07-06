@@ -6,55 +6,49 @@
 <body>
   <h1 align="center">Insurance Application</h1>
   <h2>
-    <tr>
-      <td colspan="5" align="center">
-        <table border="0" width="100%" height="25%" align="RIGHT" bgcolor="SILVER">
-          <tr align="center">
-            <td width="25%">
-              <pre>
-                <b><big><u>ACCIDENT Menu: </u></big></b>
-                <ul>
-                  <li>Saloon car =Id 1</li>
-                  <li>4 wheel car = Id 2</li>
-                  <li>Matatu = Id 3</li>
-                  <li>Bus = Id 4</li>
-                  <li>Lorry = Id 5</li>
-                  <li>Traller = Id 6</li>
-                </ul>
-              </pre>
-            </td>
-    
-            <td width="25%">
-              <pre>
-                <b><big><u>FIRE Menu:</u></big></b>
-                <ul>
-                  <li>Saloon car =Id 7</li>
-                  <li>4 wheel car = Id 8</li>
-                  <li>Matatu = Id 9</li>
-                  <li>Bus = Id 10</li>
-                  <li>Lorry = Id 11</li>
-                  <li>Traller = Id 12</li>
-                </ul>
-              </pre>
-            </td>
-    
-            <td width="25%">
-              <pre>
-                <b><U><big>THEFT Menu:</big></U></b>
-                <ul>
-                  <li>Saloon car =Id 13</li>
-                  <li>4 wheel car = Id 14</li>
-                  <li>Matatu = Id 15</li>
-                  <li>Bus = Id 16</li>
-                  <li>Lorry = Id 17</li>
-                  <li>Traller = Id 18</li>
-                </ul>
-              </pre>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
+    <table border="0" width="100%" height="25%" align="RIGHT" bgcolor="SILVER">
+      <tr align="center">
+        <td width="25%">
+          <pre>
+            <b><big><u>ACCIDENT Menu: </u></big></b>
+            <ul>
+              <li>Saloon car =Id 1</li>
+              <li>4 wheel car = Id 2</li>
+              <li>Matatu = Id 3</li>
+              <li>Bus = Id 4</li>
+              <li>Lorry = Id 5</li>
+              <li>Traller = Id 6</li>
+            </ul>
+          </pre>
+        </td>
+        <td width="25%">
+          <pre>
+            <b><big><u>FIRE Menu:</u></big></b>
+            <ul>
+              <li>Saloon car =Id 7</li>
+              <li>4 wheel car = Id 8</li>
+              <li>Matatu = Id 9</li>
+              <li>Bus = Id 10</li>
+              <li>Lorry = Id 11</li>
+              <li>Traller = Id 12</li>
+            </ul>
+          </pre>
+        </td>
+        <td width="25%">
+          <pre>
+            <b><U><big>THEFT Menu:</big></U></b>
+            <ul>
+              <li>Saloon car =Id 13</li>
+              <li>4 wheel car = Id 14</li>
+              <li>Matatu = Id 15</li>
+              <li>Bus = Id 16</li>
+              <li>Lorry = Id 17</li>
+              <li>Traller = Id 18</li>
+            </ul>
+          </pre>
+        </td>
+      </tr>
+    </table>
   </h2>
 
   <div>
@@ -64,66 +58,22 @@
   <section>
     <form>
       <label for="searchByID">Search By ID</label>
-      <input id="searchByID" type="text" placeholder="Enter ID here"/>
-      <input type="submit" />
+      <input id="searchByID" type="text" placeholder="Enter ID here" />
+      <button id="fetchButton" type="button">Fetch Data</button>
+    </form>
+  </section>
+
+  <section>
+    <form>
+      <label for="carValue">Value of Car</label>
+      <input id="carValue" type="number" placeholder="Enter value of the car" step="0.01" />
+      <button id="calculateButton" type="button">Calculate Compensation</button>
     </form>
   </section>
 
   <div id="result"></div>
+  <div id="insuranceOptions"></div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const form = document.querySelector('form');
-      const searchInput = document.getElementById('searchByID');
-      const resultContainer = document.getElementById('result');
-
-      form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        const id = searchInput.value.trim();
-        if (id !== '') {
-          fetchCarById(id)
-            .then(car => {
-              if (car) {
-                displayCarDetails(car);
-              } else {
-                displayErrorMessage('Car not found!');
-              }
-            })
-            .catch(error => {
-              displayErrorMessage('An error occurred while fetching car data.');
-              console.error(error);
-            });
-        } else {
-          displayErrorMessage('Please enter a car ID.');
-        }
-      });
-
-      function fetchCarById(id) {
-        return fetch('http://localhost:3000/cars')
-          .then(response => response.json())
-          .then(data => {
-            const cars = data.cars;
-            return cars.find(car => car.id === id);
-          });
-      }
-
-      function displayCarDetails(car) {
-        const carDetails = `
-          <h3>${car.title}</h3>
-          <p><strong>Claim:</strong> ${car.claim}</p>
-          <p><strong>Capacity:</strong> ${car.capacity}</p>
-          <p><strong>Age Limit:</strong> ${car.age_limit}</p>
-          <p><strong>Compensation Amount:</strong> ${car['compensation amount']}</p>
-          <p><strong>Description:</strong> ${car.description}</p>
-          <img src="${car.poster}" alt="${car.title}" style="max-width: 300px;">
-        `;
-        resultContainer.innerHTML = carDetails;
-      }
-
-      // function displayErrorMessage(message) {
-      //   resultContainer.innerHTML = `<p>${message}</p>`;
-      // }
-    });
-  </script>
+  <script src="index.js"></script>
 </body>
 </html>
