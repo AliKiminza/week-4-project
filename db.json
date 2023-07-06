@@ -1,0 +1,184 @@
+{
+  "cars": [
+    {
+      "id": "1",
+      "title": "SALON CAR",
+      "claim": "Accsident",
+      "capacity": "5 SEATER",
+      "age_limit": "12 Years",
+      "compensation amount": "80% of current car value",
+      "description": "Accidents due to drunk driving by our client are not compensated.",
+      "poster": "https://www.primedrivecars.co.uk/wp-content/uploads/2019/01/Family-Saloon-Car-e1547202499336.jpg"
+    },
+    {
+      "id": "2",
+      "title": "4 WHEEL CAR",
+      "claim": "Accident",
+      "capacity": "7 SEATER",
+      "age_limit": "12 Years",
+      "compensation amount": "80% of current car value",
+      "description": "Accidents due to drunk driving by our client are not compensated.",
+      "poster": "https://media.zigcdn.com/media/content/2018/Nov/mahindra-alturas-g4-rexton-xuv700-launch-in-india-zigwheels-m1_720x540.png"
+    },
+    {
+      "id": "3",
+      "title": "MATATU",
+      "claim": "Accident",
+      "capacity":"14-30 seater",
+      "age_limit": "10 Years",
+      "compensation amount": "80% of current matatu value",
+      "description": "Accidents due to drunk driving by our client are not compensated.",
+      "poster": "https://i0.wp.com/www.safari254.com/wp-content/uploads/2016/05/Matatus_San-siro.jpg"
+    },
+    {
+      "id": "4",
+      "title": "BUS",
+      "claim": "Accident",
+      "capacity":"30-100 seater",
+      "age_limit": "15 Years",
+      "compensation amount": "80% of current bus value",
+      "description": "Accidents due to drunk driving by our client are not compensated.",
+      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/43468/p43468_v_v8_aa.jpg"
+    },
+    {
+      "id": "5",
+      "title": "LORRY",
+      "claim": "Accident",
+      "capacity":"No limit",
+      "age_limit": "15 Years",
+      "compensation amount": "80% of current lorry value",
+      "description": "Accidents due to drunk driving by our client are not compensated.",
+      "poster": "https://bammtours.co.ke/wp-content/uploads/2022/12/Isuzu-FRR-Truck-for-hire-Kenya.jpg"
+    },
+    {
+      "id": "6",
+      "title": "TRALLER",
+      "claim": "Accident",
+      "capacity": "No limit",
+      "age_limit": "15 Years",
+      "compensation amount": "80% of current TRALLER value",
+      "description": "Accidents due to drunk driving by our client are not compensated.",
+      "poster": "https://ichef.bbci.co.uk/news/976/cpsprodpb/10A0A/production/_129660186_mediaitem129660184.jpg"
+    },
+    {
+      "id": "7",
+      "title": "SALON CAR",
+      "claim": "Fire",
+      "capacity":"5 SEATER",
+      "age_limit": "12 Years",
+      "compensation amount": "80% of current car value",
+      "description": "The fire should only be caused by electric malfunctioning of the car.",
+      "poster": "https://www.primedrivecars.co.uk/wp-content/uploads/2019/01/Family-Saloon-Car-e1547202499336.jpg"
+    },
+    {
+      "id": "8",
+      "title": "4 WHEEL CAR",
+      "claim": "Fire",
+      "capacity": "7 SEATER",
+      "age_limit": "12 Years",
+      "compensation amount": "80% of current car value",
+      "description": "The fire should only be caused by electric malfunctioning of the car.",
+      "poster": "https://media.zigcdn.com/media/content/2018/Nov/mahindra-alturas-g4-rexton-xuv700-launch-in-india-zigwheels-               m1_720x540.png"
+    },
+    {
+      "id": "9",
+      "title": "MATATU",
+      "claim": "Fire",
+      "capacity":"14-30 seater",
+      "age_limit": "10 Years",
+      "compensation amount": "80% of current matatu value",
+      "description": "The fire should only be caused by electric malfunctioning of the car.",
+      "poster": "https://i0.wp.com/www.safari254.com/wp-content/uploads/2016/05/Matatus_San-siro.jpg"
+    },
+    {
+      "id": "10",
+      "title": "BUS",
+      "claim": "Fire",
+      "capacity":"30-100 seater",
+      "age_limit": "15 Years",
+      "compensation amount": "80% of current bus value",
+      "description": "The fire should only be caused by electric malfunctioning of the car.",
+      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/43468/p43468_v_v8_aa.jpg"
+    },
+    {
+      "id": "11",
+      "title": "lorry",
+      "claim": "Fire",
+      "capacity":"No limit",
+      "age_limit": "15 Years",
+      "compensation amount": "80% of current lorry value",
+      "description": "The fire should only be caused by electric malfunctioning of the car.",
+      "poster": "https://bammtours.co.ke/wp-content/uploads/2022/12/Isuzu-FRR-Truck-for-hire-Kenya.jpg"
+    },
+    {
+      "id": "12",
+      "title": "TRALLER",
+      "claim": "Fire",
+      "capacity": "No limit",
+      "age_limit": "15 Years",
+      "compensation amount": "80% of current TRALLER value",
+      "description": "The fire should only be caused by electric malfunctioning of the car.",
+      "poster": "https://ichef.bbci.co.uk/news/976/cpsprodpb/10A0A/production/_129660186_mediaitem129660184.jpg"
+    },
+    {
+      "id": "13",
+      "title": "SALON CAR",
+      "claim": "Theft",
+      "capacity":"5 SEATER",
+      "age_limit": "12 Years",
+      "compensation amount": "80% of current car value",
+      "description": "Theft claims should be accompanied by a valid police report.",
+      "poster": "https://www.primedrivecars.co.uk/wp-content/uploads/2019/01/Family-Saloon-Car-e1547202499336.jpg"
+    },
+    {
+      "id": "14",
+      "title": "4 WHEEL CAR",
+      "claim": "Theft",
+      "capacity": "7 SEATER",
+      "age_limit": "12 Years",
+      "compensation amount": "80% of current car value",
+      "description": "Theft claims should be accompanied by a valid police report.",
+      "poster": "https://media.zigcdn.com/media/content/2018/Nov/mahindra-alturas-g4-rexton-xuv700-launch-in-india-zigwheels-               m1_720x540.png"
+    },
+    {
+      "id": "15",
+      "title": "MATATU",
+      "claim": "Theft",
+      "capacity":"14-30 seater",
+      "age_limit": "10 Years",
+      "compensation amount": "80% of current matatu value",
+      "description": "Theft claims should be accompanied by a valid police report.",
+      "poster": "https://i0.wp.com/www.safari254.com/wp-content/uploads/2016/05/Matatus_San-siro.jpg"
+    },
+      {
+      "id": "16",
+      "title": "BUS",
+      "claim": "Theft",
+      "capacity":"30-100 seater",
+      "age_limit": "15 Years",
+      "compensation amount": "80% of current bus value",
+      "description": "Theft claims should be accompanied by a valid police report.",
+      "poster": "https://www.gstatic.com/tv/thumb/v22vodart/43468/p43468_v_v8_aa.jpg"
+    },
+      {
+      "id": "17",
+      "title": "LORRY",
+      "claim": "Theft",
+      "capacity":"No limit",
+      "age_limit": "15 Years",
+      "compensation amount": "80% of current lorry value",
+      "description": "Theft claims should be accompanied by a valid police report.",
+      "poster": "https://bammtours.co.ke/wp-content/uploads/2022/12/Isuzu-FRR-Truck-for-hire-Kenya.jpg"
+    },
+      {
+      "id": "18",
+      "title": "TRALLER",
+      "claim": "Theft",
+      "capacity": "No limit",
+      "age_limit": "15 Years",
+      "compensation amount": "80% of current TRALLER value",
+      "description": "Theft claims should be accompanied by a valid police report.",
+      "poster": "https://ichef.bbci.co.uk/news/976/cpsprodpb/10A0A/production/_129660186_mediaitem129660184.jpg"
+    }
+  ]
+}
