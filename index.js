@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const calculateButton = document.getElementById('calculateButton');
   const resultDiv = document.getElementById('result');
   const insuranceOptionsDiv = document.getElementById('insuranceOptions');
-
+   // adding event listeners to both the fetch and calculate buttons
   fetchButton.addEventListener('click', handleFetchData);
   calculateButton.addEventListener('click', handleCalculateCompensation);
-
+  // function to check if the id entered is valid
   function handleFetchData(event) {
     event.preventDefault();
     const id = searchInput.value.trim();
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
   }
-
+ //function to calculate compensation 
   function handleCalculateCompensation(event) {
     event.preventDefault();
     const valueOfCar = parseFloat(carValueInput.value);
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
       displayCompensationAmount(compensationAmount);
     }
   }
-
+  // function to fetch data for each car per the id
   function fetchCarById(id) {
     return fetch('db.json')
       .then(response => response.json())
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return car ? car : null;
       });
   }
-
+  // function to display the car details
   function displayCarDetails(car) {
     const carDetails = `
       <h3>${car.title}</h3>
@@ -59,14 +59,14 @@ document.addEventListener('DOMContentLoaded', function () {
     `;
     resultDiv.innerHTML = carDetails;
   }
-
+  // displaying the compensation
   function displayCompensationAmount(amount) {
     const compensationDetails = `
       <p>Compensation Amount: ${amount}</p>
     `;
     resultDiv.innerHTML += compensationDetails;
   }
-
+   // displaying error message
   function displayErrorMessage(message) {
     const errorMessage = `
       <p>Error: ${message}</p>
