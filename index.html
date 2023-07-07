@@ -2,77 +2,105 @@
 <html>
 <head>
   <title>Insurance Application</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    h2 {
+      text-align: center;
+    }
+    
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    li {
+      margin-bottom: 10px;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"] {
+      width: 90%;
+      padding: 5px;
+    }
+    
+    #insuranceOptions {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    #result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    
+    #compensationAmount {
+      margin-top: 10px;
+    }
+  </style>
 </head>
-<body>
-  <h1 align="center">Insurance Application</h1>
-  <h2>
-    <table border="0" width="100%" height="25%" align="RIGHT" bgcolor="SILVER">
-      <tr align="center">
-        <td width="25%">
-          <pre>
-            <b><big><u>ACCIDENT Menu: </u></big></b>
-            <ul>
-              <li>Saloon car =Id 1</li>
-              <li>4 wheel car = Id 2</li>
-              <li>Matatu = Id 3</li>
-              <li>Bus = Id 4</li>
-              <li>Lorry = Id 5</li>
-              <li>Traller = Id 6</li>
-            </ul>
-          </pre>
-        </td>
-        <td width="25%">
-          <pre>
-            <b><big><u>FIRE Menu:</u></big></b>
-            <ul>
-              <li>Saloon car =Id 7</li>
-              <li>4 wheel car = Id 8</li>
-              <li>Matatu = Id 9</li>
-              <li>Bus = Id 10</li>
-              <li>Lorry = Id 11</li>
-              <li>Traller = Id 12</li>
-            </ul>
-          </pre>
-        </td>
-        <td width="25%">
-          <pre>
-            <b><U><big>THEFT Menu:</big></U></b>
-            <ul>
-              <li>Saloon car =Id 13</li>
-              <li>4 wheel car = Id 14</li>
-              <li>Matatu = Id 15</li>
-              <li>Bus = Id 16</li>
-              <li>Lorry = Id 17</li>
-              <li>Traller = Id 18</li>
-            </ul>
-          </pre>
-        </td>
-      </tr>
-    </table>
-  </h2>
-
+<body background="Saloon-Car.jpg">
+  <h1><u><b>INSURANCE APPLICATION</b></u></h1>
+  <h2><b>ACCIDENT Menu:</b></h2>
+  <ul><b>
+    <li>Saloon car = Id 1</li>
+    <li>4 wheel car = Id 2</li>
+    <li>Matatu = Id 3</li>
+    <li>Bus = Id 4</li>
+    <li>Lorry = Id 5</li>
+    <li>Trailer = Id 6</li></b>
+  </ul>
+  <h2><font color="red">FIRE Menu:</font></h2>
+  <ul><font color="red"><b>
+    <li>Saloon car = Id 7</li>
+    <li>4 wheel car = Id 8</li>
+    <li>Matatu = Id 9</li>
+    <li>Bus = Id 10</li>
+    <li>Lorry = Id 11</li>
+    <li>Trailer = Id 12</li></b></font>
+  </ul>
+  <h2><font color="green">THEFT Menu:</font></h2>
+  <ul><font color="green"><b>
+    <li>Saloon car = Id 13</li>
+    <li>4 wheel car = Id 14</li>
+    <li>Matatu = Id 15</li>
+    <li>Bus = Id 16</li>
+    <li>Lorry = Id 17</li>
+    <li>Trailer = Id 18</li></b></font>
+  </ul>
+  
   <div>
-    <p>Enter your claim Id according to the list above:</p>
+    <p><b>Enter your claim ID according to the list above:</b></p>
   </div>
 
   <section>
-    <form>
+    <form id="searchForm">
       <label for="searchByID">Search By ID</label>
-      <input id="searchByID" type="text" placeholder="Enter ID here" />
-      <button id="fetchButton" type="button">Fetch Data</button>
+      <input id="searchByID" type="text" placeholder="Enter ID here"/>
+      <button type="submit">Submit</button>
     </form>
   </section>
-
-  <section>
-    <form>
-      <label for="carValue">Value of Car</label>
-      <input id="carValue" type="number" placeholder="Enter value of the car" step="0.01" />
-      <button id="calculateButton" type="button">Calculate Compensation</button>
-    </form>
-  </section>
+  
+  <div id="insuranceOptions">
+    <p>Insurance:</p>
+  </div>
 
   <div id="result"></div>
-  <div id="insuranceOptions"></div>
+  
+  <section id="compensationAmount">
+    <label for="carValue">Enter Value of the Car:</label>
+    <input id="carValue" type="text" placeholder="Enter car value"/>
+    <button id="calculateButton" type="button">Calculate Compensation</button>
+  </section>
 
   <script src="index.js"></script>
 </body>
