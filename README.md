@@ -13,6 +13,9 @@ This is a web application that allows users to search for insurance information 
 3.Compensation Calculation: Users can enter the value of the car in a separate text box, and by clicking the "Calculate Compensation" button, the application automatically calculates the compensation amount, which is set to 80% of the entered car value.
 4.User-Friendly Interface: The application provides clear instructions and menus to guide users in searching for car information and performing the compensation calculation.
 
+# LINK
+https://alikiminza.github.io/week-4-project
+
 # LICENSE
 MIT license
 
